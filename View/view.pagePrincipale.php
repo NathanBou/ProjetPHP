@@ -8,7 +8,7 @@
       <header>
         <div class="MainMenu">
           <div class="col1">
-            <a href=""><img src="models/logo.jpg" alt="Logo du site" width="238" height="153"></a>
+            <a href=""><img src="../View/models/logo.jpg" alt="Logo du site" width="238" height="153"></a>
           </div>
           <div class="col2">
             <div class="ligne1">
