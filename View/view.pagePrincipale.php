@@ -17,7 +17,7 @@
               <span class="sepHome">|</span>
               <a class="lienConnexion" href="../View/view.pageConnexion.html"><span>Compte</span></a>
               <span class="sepHome">|</span>
-              <a href="PBShoppingCart.asp?PBMInit=1">
+              <a href="../View/view.panier.php">
                 <span class="prixPanier"> <?= $prixPanier ?> € </span>
               </a>
             </div>
