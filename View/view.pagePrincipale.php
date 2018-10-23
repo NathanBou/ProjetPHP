@@ -41,7 +41,7 @@
                     </ul>
                 </li>
                 <li class="menu-accessoires"><a href="#">Accessoires</a>
-                    <ul class="=sousmenu">
+                    <ul class="sousmenu">
                       <li><a href="#">Mediator</a></li>
                       <li><a href="#">Bec</a></li>
                       <li><a href="#">Cordes</a></li>
