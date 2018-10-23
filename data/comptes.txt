@@ -1,5 +1,3 @@
-Username|Password|Type(0->administrateurs, 1->clients connectés, 2->internautes non connectés)
-
 root|root|0
 baudro|romain|0
 bouviern|nathan|0
