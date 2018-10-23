@@ -1,92 +1,52 @@
-intitule|informations complementaires|prix|ref|categorie|photo
-
 Batterie acoustique|Batterie pour débutant|200|000001|7|000001.jpg
 Cymbale|Cymbale cloche zildjian|130|000002|7|000002.jpg
 Caisse Claire|Caisse claire fut bois eagletone|150|000003|7|000003.jpg
 Guitare classique|Guitare d'étude yamaha|130|000004|10|000004.jpg
 Guitare électrique|Guitare électrique FENDER forme st|1444|000005|10|000005.jpg
 Guitare acoustique|Guitare acoustique folk MARTINS GUITARS|5900|000006|10|000006.jpg
-Piano numérique NORD STAGE|Piano numérique de scène|3288|000007|11
-Piano numérique ROLAND|Piano numérique de scène|1785|000008|11
-000009|11
+Piano numérique NORD STAGE|Piano numérique de scène|3288|000007|11|000007.jpg
+Piano numérique ROLAND|Piano numérique de scène|1785|000008|11|000008.jpg
+CLAVINOVA|Piano numérique meumble YAMAHA|1250|000009|11|000009.jpg
 Violon PICCINI 1/2|Violon acoustique 1/2 EAGLESTONE|350|000010|12|000010.jpg
 Violon 1/2 YAMAHA|Violon acoustique 1/2|400|000011|12|000011.jpg
 Violon 1/2 GRAMONT|Violon acoustique 1/2 VENDROME|342|000012|12|000012.jpg
-000013|
-000014|
-000015|
-000016|
-000017|
-000018|
-000019|
-000020|
-000021|
-000022|
-000023|
-000024|
-000025|
-000026|
-000027|
-000028|
-000029|
-000030|
-000031|
-000032|
-000033|
-000034|
-000035|
-000036|
-000037|
-000038|
-000039|
-000040|
-000041|
-000042|
-000043|
-000044|
-000045|
-000046|
-000047|
-000048|
-000049|
-000050|
-000051|
-000052|
-000053|
-000054|
-000055|
-000056|
-000057|
-000058|
-000059|
-000060|
-000061|
-000062|
-000063|
-000064|
-000065|
-000066|
-000067|
-000068|
-000069|
-000070|
-000071|
-000072|
-000073|
-000074|
-000075|
-000076|
-000077|
-000078|
-000079|
-000080|
-000081|
-000082|
-000083|
-000084|
-000085|
-000086|
-000087|
-000088|
-000089|
-000090|
+Clarinette CLK|Clarinette classique en ébonite|100|000013|13|000013.jpg
+Clarinette BC|Buffet Crampon|3800|000014|13|000014.jpg
+Clarinette BD|Schreiber D-12|985|000015|13|000015.jpg
+Saxophone YAS|Saxophone YAMAHA|1000|000016|14|000016.jpg
+Saxophone SAS|Saxophone Alto pour débutant|248|000017|14|000017.jpg
+Saxophone SENZO|Buffet Crampon|3900|000018|14|000018.jpg
+Cor de chasse|Cor B12-A7|400|000019|15|000019.jpg
+Cor d'harmonie B7-Q4|Cor d'harmonie enfant|500|000020|15|000020.jpg
+Cor HR400|Cor EAGLETONE ROAD|4000|000021|15|000021.jpg
+Trompette YTR|Trompette YAMAHA|650|000022|16|000022.jpg
+Trompette T100|Trompette EAGLESTONE pour débutant|200|000023|16|000023.jpg
+Trompette TR 5|Trompette Thomann pour enfant|130|000024|16|000024.jpg
+Trombone B7-9|Trombone d'étude Tenor|2000|000025|17|000025.jpg
+Trombone K7|Trombone Courtois|1400|000026|17|000026.jpg
+Trombone AC440RBR|Trombone pour orchestre|3000|000027|17|000027.jpg
+Mediator heavy|Mediator FENDER heavy|1|000028|18|000028.jpg
+Mediator medium|Mediator FENDER medium|2|000029|18|000029.jpg
+Mediator multicolore|Mediator FENDER multicolore|6|000030|18|000030.jpg
+Bec B9-K|Bec clarinette|10|000031|19|000031.jpg
+Bec C7-K|Bec clarinette|12|000032|19|000032.jpg
+Bec K8-K|Bec clarinette|15|000033|19|000033.jpg
+Cordes dures|Cordes DADDARIO|6|000034|20|000034.jpg
+Cordes molles|Cordes ROCKTILE|8|000035|20|000035.jpg
+Cordes semi-dures|Cordes ROCKTILE|7|000036|20|000036.jpg
+Pupitre SA-7|Pupitre noir ORCHESTRA|14|000037|21|000037.jpg
+Pupitre SA-9|Pupitre noir DELSON|9|000038|21|000038.jpg
+Pupitre SB-3|Pupitre boir HOHNER|18|000039|21|000039.jpg
+Diapason FW|Diapason VERONA|5|000040|22|000040.jpg
+Diapason SI|Diapason ARNOULT|7|000041|22|000041.jpg
+Diapason CA|Diapason PERRIER|100|000042|22|000042jpg
+Accordeur K7|Accordeur BOUVIER|10|000043|23|000043.jpg
+Accordeur B8|Accordeur BAUD|620|000044|23|000044.jpg
+Accordeur D5|Accordeur SAUVAT|1|000045|23|000045.jpg
+Partition BWV|Partition Chorale|12|000046|000046.jpg
+Partition Sonate 11|Partition en La mineur|8|000047|000047.jpg
+Partition N2|Partition en si mineur|10|000048|000048.jpg
+Partition Ete|Partition quatre saisons|12|000049|000049.jpg
+Partition boléro|Partition accompagnement orchestral du boléro|9|000050|000050.jpg
+Partition Symphonie N5|Partition pour orchestre|12|000051|000051.jpg
+Partition adagio|Partition pour orchestre|11|000052|000052.jpg
