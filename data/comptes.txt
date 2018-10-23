@@ -1,5 +1,12 @@
-root|root
-baudro|romain
-bouviern|nathan
-perrbeno|benoit
-test|test
+Username|Password|Type(0->administrateurs, 1->clients connectés, 2->internautes non connectés)
+
+root|root|0
+baudro|romain|0
+bouviern|nathan|0
+perrbeno|benoit|0
+client1|client1|1
+client2|client2|1
+client3|client3|1
+client4|client4|1
+test|test|1
+rest|rest|2
