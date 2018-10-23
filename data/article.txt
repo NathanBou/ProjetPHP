@@ -43,10 +43,10 @@ Diapason CA|Diapason PERRIER|100|000042|22|000042jpg
 Accordeur K7|Accordeur BOUVIER|10|000043|23|000043.jpg
 Accordeur B8|Accordeur BAUD|620|000044|23|000044.jpg
 Accordeur D5|Accordeur SAUVAT|1|000045|23|000045.jpg
-Partition BWV|Partition Chorale|12|000046|000046.jpg
-Partition Sonate 11|Partition en La mineur|8|000047|000047.jpg
-Partition N2|Partition en si mineur|10|000048|000048.jpg
-Partition Ete|Partition quatre saisons|12|000049|000049.jpg
-Partition boléro|Partition accompagnement orchestral du boléro|9|000050|000050.jpg
-Partition Symphonie N5|Partition pour orchestre|12|000051|000051.jpg
-Partition adagio|Partition pour orchestre|11|000052|000052.jpg
+Partition BWV|Partition Chorale|12|000046|24|000046.jpg
+Partition Sonate 11|Partition en La mineur|8|000047|25|000047.jpg
+Partition N2|Partition en si mineur|10|000048|26|000048.jpg
+Partition Ete|Partition quatre saisons|12|000049|27|000049.jpg
+Partition boléro|Partition accompagnement orchestral du boléro|9|000050|28|000050.jpg
+Partition Symphonie N5|Partition pour orchestre|12|000051|29|000051.jpg
+Partition adagio|Partition pour orchestre|11|000052|30|000052.jpg
