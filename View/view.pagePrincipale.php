@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Music-all</title>
+    <link rel="stylesheet" href="../View/view.pagePrincipale.css">
   </head>
   <body>
       <header>
@@ -30,36 +31,38 @@
             </div>
           </div>
           <div class="Menu">
-            <ul>
-              <li class="menu-instruments"><a href="">Instruments</a>
-                  <ul class="Sous-menu">
-                    <li>Instruments à Cordes</li>
-                    <li>Instruments à Vents</li>
-                    <li>Percussions</li>
+            <nav>
+              <ul>
+                <li class="menu-instruments"><a href="">Instruments</a>
+                    <ul class="sousmenu">
+                      <li><a href="#">Instruments à Cordes</a></li>
+                      <li><a href="#">Instruments à Vents</a></li>
+                      <li><a href="#">Percussions</a></li>
+                    </ul>
+                </li>
+                <li class="menu-accessoires"><a href="#">Accessoires</a>
+                    <ul class="sousmenu">
+                      <li><a href="#">Mediator</a></li>
+                      <li><a href="#">Bec</a></li>
+                      <li><a href="#">Cordes</a></li>
+                      <li><a href="#">Pupitre</a></li>
+                      <li><a href="#">Diapason</a></li>
+                      <li><a href="#">Accordeur</a></li>
+                    </ul>
+                </li>
+                <li class="menu-partitions"><a href="#">Partitions</a>
+                  <ul class="sousmenu">
+                    <li><a href="#">Bach</a></li>
+                    <li><a href="#">Mozart</a></li>
+                    <li><a href="#">Chopin</a></li>
+                    <li><a href="#">Vivaldi</a></li>
+                    <li><a href="#">Ravel</a></li>
+                    <li><a href="#">Beethoven</a></li>
+                    <li><a href="#">Schubert</a></li>
                   </ul>
-              </li>
-              <li class="menu-accessoires"><a href="#">Accessoires</a>
-                  <ul class="=Sous-menu">
-                    <li>Mediator</li>
-                    <li>Bec</li>
-                    <li>Cordes</li>
-                    <li>Pupitre</li>
-                    <li>Diapason</li>
-                    <li>Accordeur</li>
-                  </ul>
-              </li>
-              <li class="menu-partitions"><a href="#">Partitions</a>
-                <ul class="Sous-menu">
-                  <li>Bach</li>
-                  <li>Mozart</li>
-                  <li>Chopin</li>
-                  <li>Vivaldi</li>
-                  <li>Ravel</li>
-                  <li>Beethoven</li>
-                  <li>Schubert</li>
-                </ul>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
 
