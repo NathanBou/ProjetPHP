@@ -31,9 +31,34 @@
           </div>
           <div class="Menu">
             <ul>
-              <li>Instruments</li>
-              <li>Accessoires</li>
-              <li>Partitions</li>
+              <li class="menu-instruments"><a href="">Instruments</a>
+                  <ul class="Sous-menu">
+                    <li>Instruments à Cordes</li>
+                    <li>Instruments à Vents</li>
+                    <li>Percussions</li>
+                  </ul>
+              </li>
+              <li class="menu-accessoires"><a href="#">Accessoires</a>
+                  <ul class="=Sous-menu">
+                    <li>Mediator</li>
+                    <li>Bec</li>
+                    <li>Cordes</li>
+                    <li>Pupitre</li>
+                    <li>Diapason</li>
+                    <li>Accordeur</li>
+                  </ul>
+              </li>
+              <li class="menu-partitions"><a href="#">Partitions</a>
+                <ul class="Sous-menu">
+                  <li>Bach</li>
+                  <li>Mozart</li>
+                  <li>Chopin</li>
+                  <li>Vivaldi</li>
+                  <li>Ravel</li>
+                  <li>Beethoven</li>
+                  <li>Schubert</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
