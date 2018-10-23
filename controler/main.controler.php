@@ -1,6 +1,6 @@
 <?php
-  global $prixPanier =0;
-
+  global $prixPanier;
+$prixPanier=0;
 
 
 
