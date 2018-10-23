@@ -1,0 +1,19 @@
+body{
+  font-family: Calibri,serif;
+  margin: 0px;
+  padding: 0px;
+}
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul > li{
+  float: left;
+}
+nav li{
+  list-style-type: none;
+}
+.sousmenu{
+  display: none;
+}
