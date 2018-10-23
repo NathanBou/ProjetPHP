@@ -1,17 +1,17 @@
 intitule|informations complementaires|prix|ref|categorie|photo
 
-000001|
-000002|
-000003|
-000004|
-000005|
-000006|
-000007|
-000008|
-000009|
-000010|
-000011|
-000012|
+Batterie acoustique|Batterie pour débutant|200|000001|7|000001.jpg
+Cymbale|Cymbale cloche zildjian|130|000002|7|000002.jpg
+Caisse Claire|Caisse claire fut bois eagletone|150|000003|7|000003.jpg
+Guitare classique|Guitare d'étude yamaha|130|000004|10|000004.jpg
+Guitare électrique|Guitare électrique FENDER forme st|1444|000005|10|000005.jpg
+Guitare acoustique|Guitare acoustique folk MARTINS GUITARS|5900|000006|10|000006.jpg
+Piano numérique NORD STAGE|Piano numérique de scène|3288|000007|11
+Piano numérique ROLAND|Piano numérique de scène|1785|000008|11
+000009|11
+Violon PICCINI 1/2|Violon acoustique 1/2 EAGLESTONE|350|000010|12|000010.jpg
+Violon 1/2 YAMAHA|Violon acoustique 1/2|400|000011|12|000011.jpg
+Violon 1/2 GRAMONT|Violon acoustique 1/2 VENDROME|342|000012|12|000012.jpg
 000013|
 000014|
 000015|
