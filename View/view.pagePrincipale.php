@@ -20,10 +20,21 @@
               <a href="../View/view.panier.php">
                 <span class="prixPanier"> <?= $prixPanier ?> € </span>
               </a>
+              <span class="sepHome">|</span>
             </div>
             <div class="ligne2">
-              <h1>Music-all</h1>
+              <div class="slogan">
+                <p>La musique pour tous</p>
+                <h1>Music-all</h1>
+              </div>
             </div>
+          </div>
+          <div class="Menu">
+            <ul>
+              <li>Instruments</li>
+              <li>Accessoires</li>
+              <li>Partitions</li>
+            </ul>
           </div>
         </div>
 
