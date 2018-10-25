@@ -8,29 +8,32 @@
   <body>
       <header>
         <div class="MainMenu">
-          <div class="MenuEste">
-            <div class="col1">
-              <a href=""><img src="../View/models/logo.jpg" alt="Logo du site" width="238" height="153"></a>
-            </div>
-            <div class="col2">
-              <div class="ligne1">
-                <span class="sepHome">|</span>
-                <a class="lienHome" href=""><span>Accueil</span></a>
-                <span class="sepHome">|</span>
-                <a class="lienConnexion" href="../View/view.pageConnexion.html"><span>Compte</span></a>
-                <span class="sepHome">|</span>
-                <a href="../View/view.panier.php">
-                  <span class="prixPanier"> <?= $prixPanier ?> € </span>
-                </a>
-                <span class="sepHome">|</span>
+          <div class="MenuTot">
+            <div class="MenuEste">
+              <div class="col1">
+                <a href=""><img src="../View/models/logo.jpg" alt="Logo du site" width="238" height="153"></a>
               </div>
-              <div class="ligne2">
-                <div class="slogan">
-                  <p>La musique pour tous</p>
-                  <h1>Music-all</h1>
+              <div class="col2">
+                <div class="ligne1">
+                  <span class="sepHome">|</span>
+                  <a class="lienHome" href=""><span>Accueil</span></a>
+                  <span class="sepHome">|</span>
+                  <a class="lienConnexion" href="../View/view.pageConnexion.html"><span>Compte</span></a>
+                  <span class="sepHome">|</span>
+                  <div class="Panier">
+                    <a href="../View/view.panier.php">
+                      <span class="prixPanier"> <?= $prixPanier ?> € </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="ligne2">
+                  <div class="slogan">
+                    <p class="Slg">La musique pour tous</p>
+                    <h1 class="Titre">Music-all</h1>
+                  </div>
                 </div>
               </div>
-            </div>
+          </div>
             <div class="MenuDeroulant">
               <nav>
                 <ul>
