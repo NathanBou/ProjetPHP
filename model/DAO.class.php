@@ -13,7 +13,7 @@ require_once("utilisateur.class.php");
         // L'objet local PDO de la base de donnée
         private $db;
         // Le type, le chemin et le nom de la base de donnée
-        private $database = 'sqlite:musicall.db';
+        private $database = 'sqlite:data/musicall.db';
 
         // Constructeur chargé d'ouvrir la BD
         function __construct() {
