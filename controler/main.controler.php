@@ -5,5 +5,5 @@
 
 
 
-  include("../View/view.pagePrincipale.php");
+  include("../View/pagePrincipale.view.php");
  ?>
