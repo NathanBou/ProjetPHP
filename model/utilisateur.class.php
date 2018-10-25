@@ -9,6 +9,10 @@ class utilisateur{
 
   //}
 
+  function getType(integer $ty){
+    return $this->type;
+}
+
 }
 
 
