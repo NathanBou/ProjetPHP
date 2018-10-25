@@ -20,10 +20,11 @@
                   <span class="sepHome">|</span>
                   <a class="lienConnexion" href="../View/view.pageConnexion.html"><span>Compte</span></a>
                   <span class="sepHome">|</span>
-                  <a href="../View/view.panier.php">
-                    <span class="prixPanier"> <?= $prixPanier ?> € </span>
-                  </a>
-                  <span class="sepHome">|</span>
+                  <div class="Panier">
+                    <a href="../View/view.panier.php">
+                      <span class="prixPanier"> <?= $prixPanier ?> € </span>
+                    </a>
+                  </div>
                 </div>
                 <div class="ligne2">
                   <div class="slogan">

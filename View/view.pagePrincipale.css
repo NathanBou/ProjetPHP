@@ -28,6 +28,21 @@ display: flex;
 width: 100%;
 max-width: 100%;
 }
+.col1 > a > img{
+margin-right: 60px;
+}
+.col2{
+width: 78%;
+max-width: 78%;
+}
+.ligne1{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.Panier{
+  margin-left: 55px;
+}
 /* CSS pour le menu deroulant*/
 nav > ul{
   margin: 0px;
