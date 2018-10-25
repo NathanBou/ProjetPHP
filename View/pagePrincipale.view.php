@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Music-all</title>
-    <link rel="stylesheet" href="../View/view.pagePrincipale.css">
+    <link rel="stylesheet" href="../View/pagePrincipale.view.css">
   </head>
   <body>
       <header>
@@ -18,10 +18,10 @@
                   <span class="sepHome">|</span>
                   <a class="lienHome" href=""><span>Accueil</span></a>
                   <span class="sepHome">|</span>
-                  <a class="lienConnexion" href="../View/view.pageConnexion.html"><span>Compte</span></a>
+                  <a class="lienConnexion" href="../View/pageConnexion.view.html"><span>Compte</span></a>
                   <span class="sepHome">|</span>
                   <div class="Panier">
-                    <a href="../View/view.panier.php">
+                    <a href="../View/panier.view.php">
                       <span class="prixPanier"> <?= $prixPanier ?> € </span>
                     </a>
                   </div>
