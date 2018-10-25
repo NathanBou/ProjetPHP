@@ -41,8 +41,30 @@
           <ul>
             <li class="menu-instruments"><a href="">Instruments</a>
                 <ul class="sousmenu">
-                  <li><a href="#">Instruments à Cordes</a></li>
-                  <li><a href="#">Instruments à Vents</a></li>
+                  <li><a href="#">Instruments à Cordes</a>
+                    <ul class="sousmenu2">
+                      <li><a href="#">Guitare</a></li>
+                      <li><a href="#">Piano</a></li>
+                      <li><a href="#">Violon</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Instruments à Vents</a>
+                    <ul class="sousmenu2">
+                      <li><a href="#">Bois</a>
+                        <ul class="sousmenu3">
+                          <li><a href="#">Clarinette</a></li>
+                          <li><a href="#">Saxophone</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Cuivres</a>
+                        <ul class="sousmenu3">
+                          <li><a href="#">Cor</a></li>
+                          <li><a href="#">Trompette</a></li>
+                          <li><a href="#">Trombone</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                   <li><a href="#">Percussions</a></li>
                 </ul>
             </li>

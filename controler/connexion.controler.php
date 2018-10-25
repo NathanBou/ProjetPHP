@@ -8,7 +8,7 @@ require_once("../model/DAO.class.php");
 
 $user = $_POST['username'];
 $mdp = $_POST['password'];
-
+$userdatabase=$database
 
 
 include("../View/pagePrincipale.view.html");
