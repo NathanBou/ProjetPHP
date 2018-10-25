@@ -2,7 +2,7 @@
 
 require_once("categorie.class.php");
 require_once("article.class.php");
-require_once("comptes.class.php");
+require_once("utilisateur.class.php");
 
 // Definition de l'unique objet de DAO
     $dao = new DAO();
@@ -26,7 +26,7 @@ require_once("comptes.class.php");
 
 
         }
-        
+
       }
 
  ?>
