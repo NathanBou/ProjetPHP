@@ -32,12 +32,12 @@ require_once("utilisateur.class.php");
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"utilisateur");
 
       return $result[0];
-      
+
     }
 
 
-    function getID($nom): integer {
-    $commande =  'SELECT id FROM categorie WHERE nom="' . $nom . '"';
+    function getCategorie($nom): categorie {
+    $commande =  'SELECT * FROM categorie WHERE nom="' . $nom . '"';
 
     $sth = $this->db->query($commande);
     $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"categorie");

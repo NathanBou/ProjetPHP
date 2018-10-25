@@ -6,8 +6,13 @@ class categorie{
   private $pere;
 
   //function __construct() {
-    
+
   //}
+
+  function __get($name){
+    return $this->$name;
+}
+
 }
 
 
