@@ -1,8 +1,9 @@
 CREATE TABLE article (
-	ref INTEGER PRIMARY KEY,
 	libelle TEXT,
-	categorie INTEGER,
+	infoscompl TEXT,
 	prix REAL,
+	ref INTEGER PRIMARY KEY,
+	categorie INTEGER,
 	image TEXT,
 	FOREIGN KEY(categorie) REFERENCES categorie(id)
 );
