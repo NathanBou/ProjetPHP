@@ -25,6 +25,35 @@ require_once("utilisateur.class.php");
 
         }
 
+    function getUtilisateur($nom) : utilisateur{
+      $commande =  'SELECT * FROM utilisateur WHERE username="' . $nom . '"';
+
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"utilisateur");
+
+      return $result[0];
+      
+    }
+
+
+    function getID($nom): integer {
+    $commande =  'SELECT id FROM categorie WHERE nom="' . $nom . '"';
+
+    $sth = $this->db->query($commande);
+    $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"categorie");
+    //var_dump($result);
+    return $result[0];
+
       }
 
+    function getArticle($categorie): article {
+    $commande =  'SELECT * FROM article WHERE categorie="' . $categorie . '"';
+
+    $sth = $this->db->query($commande);
+    $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+    //var_dump($result);
+    return $result[0];
+}
+
+}
  ?>
