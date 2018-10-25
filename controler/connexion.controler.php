@@ -9,7 +9,6 @@ require_once("../model/DAO.class.php");
 $user = $_POST['username'];
 $mdp = $_POST['password'];
 
-$article = new DAO();
 
 
 include("../View/pagePrincipale.view.html");
