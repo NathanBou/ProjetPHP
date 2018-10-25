@@ -28,8 +28,8 @@
                 </div>
                 <div class="ligne2">
                   <div class="slogan">
-                    <p>La musique pour tous</p>
-                    <h1>Music-all</h1>
+                    <p class="Slg">La musique pour tous</p>
+                    <h1 class="Titre">Music-all</h1>
                   </div>
                 </div>
               </div>
