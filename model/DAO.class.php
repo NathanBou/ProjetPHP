@@ -46,13 +46,13 @@ require_once("utilisateur.class.php");
 
       }
 
-    function getArticle($categorie): article {
+    function getArticle($categorie): array {
     $commande =  'SELECT * FROM article WHERE categorie="' . $categorie . '"';
 
     $sth = $this->db->query($commande);
     $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
     //var_dump($result);
-    return $result[0];
+    return $result;
 }
 
 }

@@ -15,5 +15,6 @@ class article{
     return $this->$name;
 }
 
+}
 
  ?>
