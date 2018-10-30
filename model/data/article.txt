@@ -6,7 +6,7 @@ Guitare électrique|Guitare électrique FENDER forme st|1444|000005|10|000005.jp
 Guitare acoustique|Guitare acoustique folk MARTINS GUITARS|5900|000006|10|000006.jpg
 Piano numérique NORD STAGE|Piano numérique de scène|3288|000007|11|000007.jpg
 Piano numérique ROLAND|Piano numérique de scène|1785|000008|11|000008.jpg
-CLAVINOVA|Piano numérique meumble YAMAHA|1250|000009|11|000009.jpg
+CLAVINOVA|Piano numérique meuble YAMAHA|1250|000009|11|000009.jpg
 Violon PICCINI 1/2|Violon acoustique 1/2 EAGLESTONE|350|000010|12|000010.jpg
 Violon 1/2 YAMAHA|Violon acoustique 1/2|400|000011|12|000011.jpg
 Violon 1/2 GRAMONT|Violon acoustique 1/2 VENDROME|342|000012|12|000012.jpg
@@ -39,7 +39,7 @@ Pupitre SA-9|Pupitre noir DELSON|9|000038|21|000038.jpg
 Pupitre SB-3|Pupitre boir HOHNER|18|000039|21|000039.jpg
 Diapason FW|Diapason VERONA|5|000040|22|000040.jpg
 Diapason SI|Diapason ARNOULT|7|000041|22|000041.jpg
-Diapason CA|Diapason PERRIER|100|000042|22|000042jpg
+Diapason CA|Diapason PERRIER|100|000042|22|000042.jpg
 Accordeur K7|Accordeur BOUVIER|10|000043|23|000043.jpg
 Accordeur B8|Accordeur BAUD|620|000044|23|000044.jpg
 Accordeur D5|Accordeur SAUVAT|1|000045|23|000045.jpg

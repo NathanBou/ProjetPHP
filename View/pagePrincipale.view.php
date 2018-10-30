@@ -43,55 +43,71 @@
                 <ul class="sousmenu">
                   <li><a href="#">Instruments à Cordes</a>
                     <ul class="sousmenu2">
-                      <li><a href="#">Guitare</a></li>
-                      <li><a href="#">Piano</a></li>
-                      <li><a href="#">Violon</a></li>
+                      <li><a href="../controler/main.controler.php?categorie=Guitare">Guitare</a></li>
+                      <li><a href="../controler/main.controler.php?categorie=Piano">Piano</a></li>
+                      <li><a href="../controler/main.controler.php?categorie=Violon">Violon</a></li>
                     </ul>
                   </li>
                   <li><a href="#">Instruments à Vents</a>
                     <ul class="sousmenu2">
                       <li><a href="#">Bois</a>
                         <ul class="sousmenu3">
-                          <li><a href="#">Clarinette</a></li>
-                          <li><a href="#">Saxophone</a></li>
+                          <li><a href="../controler/main.controler.php?categorie=Clarinette">Clarinette</a></li>
+                          <li><a href="../controler/main.controler.php?categorie=Saxophone">Saxophone</a></li>
                         </ul>
                       </li>
                       <li><a href="#">Cuivres</a>
                         <ul class="sousmenu3">
-                          <li><a href="#">Cor</a></li>
-                          <li><a href="#">Trompette</a></li>
-                          <li><a href="#">Trombone</a></li>
+                          <li><a href="../controler/main.controler.php?categorie=Cor">Cor</a></li>
+                          <li><a href="../controler/main.controler.php?categorie=Trompette">Trompette</a></li>
+                          <li><a href="../controler/main.controler.php?categorie=Trombone">Trombone</a></li>
                         </ul>
                       </li>
                     </ul>
                   </li>
-                  <li><a href="#">Percussions</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Percussions">Percussions</a></li>
                 </ul>
             </li>
             <li class="menu-accessoires"><a href="#">Accessoires</a>
                 <ul class="sousmenu">
-                  <li><a href="#">Mediator</a></li>
-                  <li><a href="#">Bec</a></li>
-                  <li><a href="#">Cordes</a></li>
-                  <li><a href="#">Pupitre</a></li>
-                  <li><a href="#">Diapason</a></li>
-                  <li><a href="#">Accordeur</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Mediator">Mediator</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Bec">Bec</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Cordes">Cordes</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Pupitre">Pupitre</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Diapason">Diapason</a></li>
+                  <li><a href="../controler/main.controler.php?categorie=Accordeur">Accordeur</a></li>
                 </ul>
             </li>
             <li class="menu-partitions"><a href="#">Partitions</a>
               <ul class="sousmenu">
-                <li><a href="#">Bach</a></li>
-                <li><a href="#">Mozart</a></li>
-                <li><a href="#">Chopin</a></li>
-                <li><a href="#">Vivaldi</a></li>
-                <li><a href="#">Ravel</a></li>
-                <li><a href="#">Beethoven</a></li>
-                <li><a href="#">Schubert</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Bach">Bach</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Mozart">Mozart</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Chopin">Chopin</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Vivaldi">Vivaldi</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Ravel">Ravel</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Beethoven">Beethoven</a></li>
+                <li><a href="../controler/main.controler.php?categorie=Schubert">Schubert</a></li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
       </header>
+
+      <?php if  ($nbelem != 0) {?>
+      <h1><?= $categorie->__get("nom") ?></h1>
+
+      <?php foreach($articles as $key => $value){   ?>
+        <div class="">
+          <img src="../View/models/<?= $value->__get("image") ?>" /> <br>
+          <?= $value->__get("libelle") ?> <br>
+          Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
+          Prix : <?= $value->__get("prix") ?>
+          </div>
+          <?php } ?>
+
+
+
+        <?php } ?>
   </body>
 </html>
