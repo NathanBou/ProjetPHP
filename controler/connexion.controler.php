@@ -7,23 +7,22 @@ require_once("../model/DAO.class.php");
 global $database;
 $database = new DAO();
 $user = $_POST['username'];
-var_dump($user);
 $allusers=$database->getUsers();
-foreach ($allusers as $usertest) {
-  if ($user=$usertest) {
-      echo "1";
+$know=false;
+foreach ($allusers as $value) {
+  if ($user == $value['username']){
+    $know= true;
   }
 }
-$mdp = $_POST['password'];
-
-
-
-
-
-
-
-
-
-
-
+if ($know) {
+  $thisuser=$database->getUtilisateur($user);
+  $mdp = $_POST['password'];
+  if ($thisuser->getPassword()==$mdp){
+    echo "connection";
+  }else {
+    $erreur="Mot de passe incorrect";
+  }
+}else {
+  $erreur="Non d'utilisateur inconnue";
+}
 ?>

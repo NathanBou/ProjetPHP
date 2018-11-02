@@ -9,10 +9,12 @@ class utilisateur{
 
   //}
 
-  function getType(integer $ty){
+  function getType(){
     return $this->type;
 }
-
+  function getPassword(){
+    return $this->password;
+  }
 }
 
 
