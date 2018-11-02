@@ -5,6 +5,7 @@ require_once("../model/article.class.php");
 require_once("../model/utilisateur.class.php");
 require_once("../model/DAO.class.php");
 global $database;
+global $erreur;
 $database = new DAO();
 $user = $_POST['username'];
 $allusers=$database->getUsers();

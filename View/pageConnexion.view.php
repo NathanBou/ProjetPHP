@@ -10,6 +10,7 @@
     </div>
     <h1>Authentification</h1>
     <form class="" action="../controler/connexion.controler.php" method="post">
+      <?php echo $erreur ?>
       <div class="lab">
         <label for="username">Nom d'utilisateur</label>
       </div>

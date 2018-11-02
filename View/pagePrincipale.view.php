@@ -18,7 +18,7 @@
                   <span class="sepHome">|</span>
                   <a class="lienHome" href=""><span>Accueil</span></a>
                   <span class="sepHome">|</span>
-                  <a class="lienConnexion" href="../View/pageConnexion.view.html"><span>Compte</span></a>
+                  <a class="lienConnexion" href="../View/pageConnexion.view.php"><span>Compte</span></a>
                   <span class="sepHome">|</span>
                   <div class="Panier">
                     <a href="../View/panier.view.php">
