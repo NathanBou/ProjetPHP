@@ -6,11 +6,11 @@
   </head>
   <body>
     <div class="img">
-      <img src="models/logo.jpg" alt="LOGO" width="238" height="153">
+      <img src="../View/models/logo.jpg" alt="LOGO" width="238" height="153">
     </div>
     <h1>Authentification</h1>
     <form class="" action="../controler/connexion.controler.php" method="post">
-      <?php echo $erreur ?>
+      <?php if (isset($erreur)){echo $erreur;} ?>
       <div class="lab">
         <label for="username">Nom d'utilisateur</label>
       </div>
@@ -30,7 +30,7 @@
       </div>
     </form>
     <div class="image home">
-      <a href="../controler/main.controler.php"><img src="models/home.png" alt="Menu" height="100"  width="100"></a>
+      <a href="../controler/main.controler.php"><img src="../View/models/home.png" alt="Menu" height="100"  width="100"></a>
     </div>
   </body>
 </html>

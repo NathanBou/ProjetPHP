@@ -18,12 +18,15 @@ foreach ($allusers as $value) {
 if ($know) {
   $thisuser=$database->getUtilisateur($user);
   $mdp = $_POST['password'];
-  if ($thisuser->getPassword()==$mdp){
-    echo "connection";
-  }else {
+  if (!$thisuser->getPassword()==$mdp){
     $erreur="Mot de passe incorrect";
   }
 }else {
   $erreur="Non d'utilisateur inconnue";
+}
+if (isset($erreur)) {
+  include("../View/pageConnexion.view.php");
+}else{
+  include("main.controler.php");
 }
 ?>
