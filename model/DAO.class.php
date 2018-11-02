@@ -24,7 +24,13 @@ require_once("utilisateur.class.php");
 
 
         }
+    function getUsers(){
+      $commande =  'SELECT username FROM utilisateur ';
 
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+      return $result;
+    }
     function getUtilisateur($nom) : utilisateur{
       $commande =  'SELECT * FROM utilisateur WHERE username="' . $nom . '"';
 
