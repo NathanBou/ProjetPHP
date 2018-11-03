@@ -3,12 +3,13 @@
  *
  */
 require_once("../model/article.class.php");
+require_once("../model/utilisateur.class.php");
 class panier{
   private $art;
   private $user;
-  function __construct($user)
+  function __construct($unuser)
   {
-    $this->user=$user;
+    $this->user=$unuser;
     $this->art=array();
   }
   function getPrix(){
