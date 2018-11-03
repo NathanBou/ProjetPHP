@@ -33,7 +33,6 @@ require_once("utilisateur.class.php");
     }
     function getUtilisateur($nom) : utilisateur{
       $commande =  'SELECT * FROM utilisateur WHERE username="' . $nom . '"';
-
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"utilisateur");
 
@@ -59,7 +58,13 @@ require_once("utilisateur.class.php");
     $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
     //var_dump($result);
     return $result;
-}
-
+    }
+    function getArticleRef($ref,$cat): article {
+    $commande =  'SELECT * FROM article WHERE ref="'.$ref.'" AND categorie="'.$cat.'"';
+    $sth = $this->db->query($commande);
+    $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+    //var_dump($result);
+    return $result[0];
+    }
 }
  ?>
