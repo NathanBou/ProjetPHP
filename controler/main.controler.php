@@ -7,15 +7,16 @@ require_once("../model/DAO.class.php");
 
   if((!isset($_GET['connect']))&&(!isset($connect))){
       global $connect;
-  }elseif((isset($_GET['connect']))&&($_GET['connect']=='true')){
-      global $connect;
+      global $user;
+  }elseif((isset($_GET['connect']))&&($_GET['connect']!='')){
+      $user=$_GET['connect'];
       $connect=true;
-      echo "hey";
   }
-
+  echo $connect;
+  global $database;
   global $prixPanier;
   $prixPanier=0;
-  global $database;
+
   $database = new DAO();
   if (isset($_GET['categorie'])) {
     $categorie = $database->getCategorie($_GET['categorie']);
