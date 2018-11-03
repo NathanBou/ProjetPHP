@@ -14,7 +14,6 @@ require_once("../model/DAO.class.php");
 
   if (isset($_GET['categorie'])) {
     $categorie = $database->getCategorie($_GET['categorie']);
-    var_dump($categorie);
     $IDcategorie = $categorie->__get("id");
     $articles = $database->getArticle($IDcategorie);
 

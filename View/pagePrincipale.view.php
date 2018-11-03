@@ -22,7 +22,8 @@
                   <span class="sepHome">|</span>
                   <div class="Panier">
                     <a href="../View/panier.view.php">
-                      <span class="prixPanier"> <?= $prixPanier ?> € </span>
+                      <img src="../View/models/panier.png" alt="panier" width="23" height="23">
+                      <span class="prixPanier"><?=$prixPanier?>€</span>
                     </a>
                   </div>
                 </div>
