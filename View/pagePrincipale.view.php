@@ -94,21 +94,20 @@
         </nav>
       </div>
       </header>
-
+      <div class="listArt">
       <?php if  ($nbelem != 0) {?>
       <h1><?= $categorie->__get("nom") ?></h1>
-
+      <br>
       <?php foreach($articles as $key => $value){   ?>
-        <div class="">
-          <img src="../View/models/<?= $value->__get("image") ?>" /> <br>
+        <div class="Art">
+          <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
           <?= $value->__get("libelle") ?> <br>
           Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
-          Prix : <?= $value->__get("prix") ?>
+          Prix : <?= $value->__get("prix") ?><br>
+          <a href="#"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
           </div>
           <?php } ?>
-
-
-
         <?php } ?>
+      </div>
   </body>
 </html>

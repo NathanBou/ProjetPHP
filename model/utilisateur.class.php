@@ -1,9 +1,10 @@
 <?php
-
+require_once("../model/panier.class.php");
 class utilisateur{
   private $username;
   private $password;
   private $type;
+  private $panier;
 
   //function __construct() {
 
@@ -15,6 +16,9 @@ class utilisateur{
   function getPassword(){
     return $this->password;
   }
+}
+function getPanier(){
+
 }
 
 

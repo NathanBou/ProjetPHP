@@ -14,8 +14,8 @@ class article{
   function __get($name){
     return $this->$name;
 }
-
+  function getPrix(){
+    return $this->prix;
+  }
 }
-
-
  ?>

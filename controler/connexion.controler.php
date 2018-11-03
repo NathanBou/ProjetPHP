@@ -21,7 +21,7 @@ foreach ($allusers as $value) {
 if ($know) {
   $thisuser=$database->getUtilisateur($user);
   $mdp = $_POST['password'];
-  if (!$thisuser->getPassword()==$mdp){
+  if ($thisuser->getPassword()!=$mdp){
     $erreur="Mot de passe incorrect";
   }
 }else {

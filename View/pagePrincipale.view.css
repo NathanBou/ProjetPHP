@@ -201,3 +201,24 @@ nav > ul >li:hover a{
   padding: 15px 30px 20px 30px;
 }
 /*Fin menu deroulant*/
+/*Liste article*/
+.listArt{
+  display: flex;
+  flex-flow: row wrap;
+}
+.listArt > h1{
+  color: #424558;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+  text-decoration: underline;
+  width:100%;
+  margin:auto;
+}
+.Art{
+  margin: 5px 30px;
+}
+.Art > a{
+  text-decoration: none;
+  color: black;
+}

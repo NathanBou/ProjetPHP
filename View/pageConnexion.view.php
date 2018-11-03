@@ -15,13 +15,13 @@
         <label for="username">Nom d'utilisateur</label>
       </div>
       <div class="inp">
-        <input id="username" name="username" class="required" tabindex="1" accesskey="u" value="" size="25" autocomplete="off" type="text">
+        <input id="username" name="username" type="text" required tabindex="1" accesskey="u" value="" size="25" autocomplete="off" >
       </div>
       <div class="lab">
         <label for="password">Mot de passe</label>
       </div>
       <div class="inp">
-        <input id="password" name="password" class="required" tabindex="2" accesskey="p" value="" size="25" autocomplete="off" type="password">
+        <input id="password" name="password" type="password" required tabindex="2" accesskey="p" value="" size="25" autocomplete="off" >
       </div>
       <br>
       <div class="boutons">
