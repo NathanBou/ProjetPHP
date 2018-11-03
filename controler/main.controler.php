@@ -5,11 +5,12 @@ require_once("../model/article.class.php");
 require_once("../model/utilisateur.class.php");
 require_once("../model/DAO.class.php");
 
-  if(!isset($connect)){
+  if((!isset($_GET['connect']))&&(!isset($connect))){
       global $connect;
+  }elseif((isset($_GET['connect']))&&($_GET['connect']=='true')){
+      global $connect;
+      $connect=true;
       echo "hey";
-  }elseif(isset($connect)){
-    $connect=true;
   }
 
   global $prixPanier;

@@ -44,7 +44,7 @@
                 <ul class="sousmenu">
                   <li><a href="#">Instruments à Cordes</a>
                     <ul class="sousmenu2">
-                      <li><a href="../controler/main.controler.php?categorie=Guitare">Guitare</a></li>
+                      <li><a href="../controler/main.controler.php?categorie=Guitare&connect=<?php if($connect){?>true<?php }else{ ?>false<?php }?>">Guitare</a></li>
                       <li><a href="../controler/main.controler.php?categorie=Piano">Piano</a></li>
                       <li><a href="../controler/main.controler.php?categorie=Violon">Violon</a></li>
                     </ul>
