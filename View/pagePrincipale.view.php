@@ -104,7 +104,9 @@
           <?= $value->__get("libelle") ?> <br>
           Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
           Prix : <?= $value->__get("prix") ?><br>
-          <a href="#"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
+          <?php if($connect){?>
+            <a href="#"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
+          <?php } ?>
           </div>
           <?php } ?>
         <?php } ?>

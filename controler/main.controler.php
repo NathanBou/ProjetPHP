@@ -5,13 +5,17 @@ require_once("../model/article.class.php");
 require_once("../model/utilisateur.class.php");
 require_once("../model/DAO.class.php");
 
-  global $connect;
+  if(!isset($connect)){
+      global $connect;
+      echo "hey";
+  }elseif(isset($connect)){
+    $connect=true;
+  }
+
   global $prixPanier;
   $prixPanier=0;
-
   global $database;
   $database = new DAO();
-
   if (isset($_GET['categorie'])) {
     $categorie = $database->getCategorie($_GET['categorie']);
     $IDcategorie = $categorie->__get("id");
