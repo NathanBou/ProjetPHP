@@ -43,7 +43,7 @@
           if($connect){
             $parametre="&connect=".$user;
           }else{
-            $parametre="&connect=''";
+            $parametre="&connect=";
           }
           ?>
         <nav>
