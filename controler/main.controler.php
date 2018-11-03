@@ -9,10 +9,12 @@ require_once("../model/DAO.class.php");
       global $connect;
       global $user;
   }elseif((isset($_GET['connect']))&&($_GET['connect']!='')){
+    echo "string";
+      global $user;
       $user=$_GET['connect'];
+      global $connect;
       $connect=true;
   }
-  echo $connect;
   global $database;
   global $prixPanier;
   $prixPanier=0;
