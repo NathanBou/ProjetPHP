@@ -140,6 +140,7 @@ nav li:hover .sousmenu{
   left : 0px;
   padding: 0px;
   z-index: 100000;
+  background-color: #424558;
 }
 .sousmenu li{
   border-bottom: 1px solid #CCC
@@ -147,7 +148,7 @@ nav li:hover .sousmenu{
 .sousmenu li a{
   padding: 15px 30px;
   font-size: 13px;
-  color: #222538;
+  color: #fff;
   width: 270px;
 }
 .sousmenu li:hover .sousmenu2{
@@ -156,6 +157,7 @@ nav li:hover .sousmenu{
   left : 100%;
   padding: 0px;
   z-index: 100000;
+  background-color: #424558;
 }
 .sousmenu2 li{
   border-bottom: 1px solid #CCC
@@ -163,7 +165,7 @@ nav li:hover .sousmenu{
 .sousmenu2 li a{
   padding: 15px 30px;
   font-size: 13px;
-  color: #222538;
+  color: #fff;
   width: 270px;
 }
 .sousmenu2 li:hover .sousmenu3{
@@ -172,6 +174,7 @@ nav li:hover .sousmenu{
   left : 100%;
   padding: 0px;
   z-index: 100000;
+  background-color: #424558;
 }
 .sousmenu3 li{
   border-bottom: 1px solid #CCC
@@ -179,7 +182,7 @@ nav li:hover .sousmenu{
 .sousmenu3 li a{
   padding: 15px 30px;
   font-size: 13px;
-  color: #222538;
+  color: #fff;
   width: 270px;
 }
 .menu-instruments:hover{

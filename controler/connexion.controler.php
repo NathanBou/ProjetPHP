@@ -6,6 +6,9 @@ require_once("../model/utilisateur.class.php");
 require_once("../model/DAO.class.php");
 global $database;
 global $erreur;
+global $user;
+global $connect;
+$connect=false;
 $database = new DAO();
 $user = $_POST['username'];
 $allusers=$database->getUsers();
@@ -27,6 +30,7 @@ if ($know) {
 if (isset($erreur)) {
   include("../View/pageConnexion.view.php");
 }else{
+  $connect=true;
   include("main.controler.php");
 }
 ?>
