@@ -12,14 +12,13 @@ class utilisateur{
 
   function getType(){
     return $this->type;
-}
+  }
   function getPassword(){
     return $this->password;
   }
+
+  function getPrixPanier(){
+    return $panier->getPrix();
+  }
 }
-function getPanier(){
-
-}
-
-
- ?>
+?>

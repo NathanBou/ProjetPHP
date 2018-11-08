@@ -26,7 +26,6 @@ require_once("utilisateur.class.php");
         }
     function getUsers(){
       $commande =  'SELECT username FROM utilisateur ';
-
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_ASSOC);
       return $result;
@@ -42,28 +41,26 @@ require_once("utilisateur.class.php");
 
 
     function getCategorie($nom): categorie {
-    $commande =  'SELECT * FROM categorie WHERE nom="' . $nom . '"';
-
-    $sth = $this->db->query($commande);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"categorie");
-    //var_dump($result);
-    return $result[0];
+      $commande =  'SELECT * FROM categorie WHERE nom="' . $nom . '"';
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"categorie");
+      //var_dump($result);
+      return $result[0];
       }
 
     function getArticle($categorie): array {
-    $commande =  'SELECT * FROM article WHERE categorie="' . $categorie . '"';
-
-    $sth = $this->db->query($commande);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
-    //var_dump($result);
-    return $result;
+      $commande =  'SELECT * FROM article WHERE categorie="' . $categorie . '"';
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      //var_dump($result);
+      return $result;
     }
     function getArticleRef($ref,$cat): article {
-    $commande =  'SELECT * FROM article WHERE ref="'.$ref.'" AND categorie="'.$cat.'"';
-    $sth = $this->db->query($commande);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
-    //var_dump($result);
-    return $result[0];
+      $commande =  'SELECT * FROM article WHERE ref="'.$ref.'" AND categorie="'.$cat.'"';
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      //var_dump($result);
+      return $result[0];
     }
 }
  ?>
