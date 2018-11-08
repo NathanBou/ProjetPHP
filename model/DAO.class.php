@@ -34,9 +34,7 @@ require_once("utilisateur.class.php");
       $commande =  'SELECT * FROM utilisateur WHERE username="' . $nom . '"';
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"utilisateur");
-
       return $result[0];
-
     }
     function getCategorie($nom): categorie {
       $commande =  'SELECT * FROM categorie WHERE nom="' . $nom . '"';
@@ -52,6 +50,12 @@ require_once("utilisateur.class.php");
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
       //var_dump($result);
       return $result;
+    }
+    function getPrixArticle($ref,$categorie){
+      $commande =  "SELECT prix FROM article WHERE ref=\"$ref\" AND categorie=\"$categorie\" ";
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+      return $result[0];
     }
     function ajoutezAuPanier($user,$ref,$cat){
       $commande = "INSERT INTO panier(user,ref,categorie,quantite) VALUES('$user','$ref','$cat','1')";

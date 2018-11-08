@@ -17,8 +17,5 @@ class utilisateur{
     return $this->password;
   }
 
-  function getPrixPanier(){
-    return $panier->getPrix();
-  }
 }
 ?>
