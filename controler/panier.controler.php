@@ -5,5 +5,7 @@ require_once("../model/DAO.class.php");
 require_once("../model/panier.class.php");
 $database = new DAO();
 $article=$database->getArticleRef($_GET["ref"],$_GET["categorie"]);
-var_dump($article);
+global $prixPanier;
+$prixPanier=$prixPanier+($article->getPrix());
+include("main.controler.php");
  ?>

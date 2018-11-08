@@ -48,7 +48,6 @@ require_once("utilisateur.class.php");
     $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"categorie");
     //var_dump($result);
     return $result[0];
-
       }
 
     function getArticle($categorie): array {

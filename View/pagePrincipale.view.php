@@ -26,7 +26,7 @@
                   <span class="sepHome">|</span>
                   <a class="lienHome" href=""><span>Accueil</span></a>
                   <span class="sepHome">|</span>
-                  <a class="lienConnexion" href="../View/pageConnexion.view.php"><span><?php if($connect){echo $user;}else{echo "Compte";}?></span></a>
+                  <?php if($connect){echo $user;}else{echo "<a class=\"lienConnexion\" href=\"../View/pageConnexion.view.php\">Compte</a>";}?>
                   <span class="sepHome">|</span>
                   <div class="Panier">
                     <a href="../View/panier.view.php">
