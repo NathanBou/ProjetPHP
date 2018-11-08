@@ -20,3 +20,10 @@ CREATE TABLE utilisateur (
 	password TEXT,
 	type INTEGER
 );
+CREATE TABLE panier(
+	user TEXT REFERENCES utilisateur(username),
+	ref INTEGER REFERENCES article(ref),
+	categorie INTEGER REFERENCES article(categorie),
+	quantite INTEGER,
+	PRIMARY KEY(user,ref,categorie)
+);

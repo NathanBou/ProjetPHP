@@ -62,5 +62,16 @@ require_once("utilisateur.class.php");
       //var_dump($result);
       return $result[0];
     }
+    function ajoutezAuPanier($user,$ref,$cat){
+      $commande = "INSERT INTO panier VALUES(\'$user\',\'$ref\',\'$cat\',\'1\')";
+      $sth = $this->db->query($commande);
+      echo "effectuer";
+    }
+    function getPanier($user){
+      $commande =  'SELECT * FROM panier WHERE user="'.$user.'" ';
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+      return $result;
+    }
 }
  ?>
