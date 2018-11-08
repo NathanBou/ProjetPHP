@@ -120,7 +120,7 @@
           Prix : <?= $value->__get("prix") ?><br>
           Ref : <?= $value->__get("ref") ?> <br>
           <?php if($connect){?>
-            <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&categorie=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
+            <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&cat=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
           <?php }else{?>
             <a href="../View/pageConnexion.view.php">Connectez vous !</a>
           <?php } ?>

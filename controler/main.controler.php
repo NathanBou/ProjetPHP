@@ -16,7 +16,7 @@ require_once("../model/DAO.class.php");
       $user=$_GET['connect'];
       global $connect;
       $connect=true;
-
+      $prixPanier=$database->getPrixPanier($user);
   }elseif((isset($_GET['connect']))&&($_GET['connect']=='')){
     global $connect;
     $connect=false;

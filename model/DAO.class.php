@@ -51,10 +51,10 @@ require_once("utilisateur.class.php");
       //var_dump($result);
       return $result;
     }
-    function getPrixArticle($ref,$categorie){
-      $commande =  "SELECT prix FROM article WHERE ref=\"$ref\" AND categorie=\"$categorie\" ";
+    function getArticleRef($ref): article {
+      $commande =  'SELECT * FROM article WHERE ref="' . $ref . '"';
       $sth = $this->db->query($commande);
-      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
       return $result[0];
     }
     function ajoutezAuPanier($user,$ref,$cat){
@@ -66,6 +66,17 @@ require_once("utilisateur.class.php");
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_ASSOC);
       return $result;
+    }
+    function getPrixPanier($user):int{
+      $panier=$this->getPanier($user);
+      $prixtot=0;
+      foreach ($panier as $value) {
+        $ref=$value['ref'];
+        $article=$this->getArticleRef($ref);
+        $prixarticle=$article->getPrix();
+        $prixtot=$prixtot+$prixarticle;
+      }
+      return $prixtot;
     }
 }
  ?>

@@ -1,5 +1,4 @@
 <?php
-require_once("../model/panier.class.php");
 class utilisateur{
   private $username;
   private $password;
