@@ -108,8 +108,33 @@
         </nav>
       </div>
       </header>
-      <div class="listArt">
+
       <?php if  ($nbelem != 0) {?>
+      <div class="tris">
+        <h1>Trier par :</h1>
+        <FORM class="" action="../controler/pagePrincipale.php" method="post">
+          <div class="">
+            <label for="ref">Référence</label>
+          <INPUT id="ref" type="radio" name="tri" value="référence" checked>
+          </div>
+          <div class="">
+            <label for="nom">Nom</label>
+          <INPUT id = "nom" type="radio" name="tri" value="nom">
+          </div>
+          <div class="">
+            <label for="prix">Prix</label>
+          <INPUT id = "prix" type="radio" name="tri" value="prix">
+          </div>
+          <div class="bouton">
+            <input type="submit" name="Valider" value="Valider">
+            </div>
+
+
+        </FORM>
+      </div>
+
+      <div class="listArt">
+
       <h1><?= $categorie->__get("nom") ?></h1>
       <br>
       <?php foreach($articles as $key => $value){   ?>
