@@ -119,7 +119,7 @@
         <FORM class="" action="../controler/main.controler.php?<?php echo $parametre; ?><?php if(isset($paracat)){echo $paracat;} ?>" method="post">
           <div class="">
             <label for="ref">Référence</label>
-          <INPUT id="ref" type="radio" name="tri" value="référence" checked>
+          <INPUT id="ref" type="radio" name="tri" value="référence">
           </div>
           <div class="">
             <label for="nomA">Nom A-Z</label>
