@@ -222,6 +222,20 @@ nav > ul >li:hover a{
   text-decoration: none;
   color: black;
 }
+/*Liste panier*/
+.listPanier{
+  display: flex;
+  flex-flow: row wrap;
+}
+.listPanier > h1{
+  color: #424558;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+  text-decoration: underline;
+  width:100%;
+  margin:auto;
+}
 /*Menu de tri*/
 .tris{
   float: left;

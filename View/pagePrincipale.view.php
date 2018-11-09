@@ -155,15 +155,22 @@
           <?php } ?>
           </div>
           <?php } ?>
-        <?php }elseif ($affichepanier) { ?>
-          <?php
-            foreach ($panier as $val) { $value=$database->getArticleRef($val["ref"]);?>
+        <?php }elseif (isset($affichepanier)&&$affichepanier) { ?>
+          <div class="listPanier">;
+          <h1> Votre panier </h1>
+
+          <?php foreach ($panier as $val) { $value=$database->getArticleRef($val["ref"]);?>
+            <div class="Art">
+              <fieldset>
               <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
               <?= $value->__get("libelle") ?> <br>
-              Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
               Prix : <?= $value->__get("prix") ?><br>
               Ref : <?= $value->__get("ref") ?> <br>
+
+            </fieldset>
+            </div>
           <?php }  ?>
+            </div>
         <?php } ?>
       </div>
   </body>
