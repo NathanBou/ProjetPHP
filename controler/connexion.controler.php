@@ -9,6 +9,7 @@ $connect=false;
 $database = new DAO();
 $user = $_POST['username'];
 if (isset($_GET["categorie"])) {
+  global $cat;
     $cat=$_GET["categorie"];
 }
 $allusers=$database->getUsers();
