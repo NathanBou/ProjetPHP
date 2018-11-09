@@ -116,7 +116,7 @@
       <?php if  ($nbelem != 0) {?>
       <div class="tris">
         <h1>Trier par :</h1>
-        <FORM class="" action="../controler/main.controler.php" method="post">
+        <FORM class="" action="../controler/main.controler.php?<?php echo $parametre; ?><?php if(isset($paracat)){echo $paracat;} ?>" method="post">
           <div class="">
             <label for="ref">Référence</label>
           <INPUT id="ref" type="radio" name="tri" value="référence" checked>
