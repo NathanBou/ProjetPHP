@@ -76,8 +76,8 @@ require_once("../model/DAO.class.php");
     $nbelem = 0;
   }
 
-  if (isset($_POST['prix'])) {
-    $database->ModifierPrix($_GET['ref'] ,$_POST['prix']);
+  if (isset($_GET['prix'])) {
+    $database->ModifierPrix($_GET['ref'] ,$_GET['prix']);
   }
 
 //Troisième Partie
