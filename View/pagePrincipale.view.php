@@ -181,11 +181,10 @@
             </fieldset>
             </div>
           <?php }  ?>
-
           <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=all"><input type="submit" name="vider" value="Videz le panier"> </a>
             </div>
         <?php }else{ ?>
-          <img src="../View/models/acceuil.jpg" alt="photo acceuil" width="100%" height="75%"">
+          <img src="../View/models/acceuil." alt="photo acceuil" width="100%" height="75%"">
         <?php } ?>
       </div>
   </body>
