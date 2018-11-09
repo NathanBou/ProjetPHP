@@ -150,7 +150,7 @@ require_once("utilisateur.class.php");
     }
 
     function ModifierPrix($ref, $prix) {
-      $commande =  "UPDATE article SET prix = $prix WHERE ref=$ref";
+      $commande =  "UPDATE article SET prix ='$prix' WHERE ref='$ref'";
       $this->db->exec($commande);
     }
 
