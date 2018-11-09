@@ -122,7 +122,7 @@ require_once("utilisateur.class.php");
     }
 
     function triArticleNomZA($categorie): array {
-      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by desc libelle";
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by libelle desc";
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
       return $result;
@@ -136,7 +136,7 @@ require_once("utilisateur.class.php");
     }
 
     function triArticlePrixD($categorie): array {
-      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by desc prix";
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by  prix desc";
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
       return $result;
