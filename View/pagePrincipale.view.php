@@ -150,24 +150,26 @@
       <h1><?= $categorie->__get("nom") ?></h1>
       <br>
       <?php foreach($articles as $key => $value){   ?>
-        <div class="Art">
-          <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
-          <?= $value->__get("libelle") ?> <br>
-          Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
-          Prix : <?= $value->__get("prix") ?> €<br>
-          Ref : <?= $value->__get("ref") ?> <br>
-          <?php if($connect){?>
-            <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&cat=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
-          <?php }else{?>
-            <a href="../View/pageConnexion.view.php">Connectez vous !</a>
-          <?php } ?>
+        <div class="ArticleCatalogue">
+          <fieldset class="Art">
+            <h2><?= $value->__get("libelle") ?></h2> <br>
+            <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
+            Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
+            Prix : <?= $value->__get("prix") ?> €<br>
+            Ref : <?= $value->__get("ref") ?> <br>
+            <?php if($connect){?>
+              <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&cat=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23"></a>
+            <?php }else{?>
+              <a href="../View/pageConnexion.view.php">Connectez vous !</a>
+            <?php } ?>
+        </fieldset>
           </div>
           <?php } ?>
         <?php }elseif (isset($affichepanier)&&$affichepanier) { ?>
           <div class="listPanier">
           <h1> Votre panier </h1>
           <?php foreach ($panier as $val) { $value=$database->getArticleRef($val["ref"]);?>
-            <div class="Art">
+            <div class="ArticlePanier">
               <fieldset class="Article">
               <h2> <?= $value->__get("libelle") ?> </h2><br>
               <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="250" width="250"/> <br>

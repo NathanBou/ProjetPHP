@@ -215,8 +215,19 @@ nav > ul >li:hover a{
   width:100%;
   margin:auto;
 }
+
 .Art{
   margin: 5px 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+
+}
+.Art > h2{
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 0px;
 }
 .Art > a{
   text-decoration: none;
