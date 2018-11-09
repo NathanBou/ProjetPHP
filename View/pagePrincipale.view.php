@@ -33,7 +33,7 @@
                   <?php if($connect){echo $user;}else{echo "<a class=\"lienConnexion\" href=\"../View/pageConnexion.view.php\">Compte</a>";}?>
                   <span class="sepHome">|</span>
                   <div class="Panier">
-                    <a href="../View/panier.view.php?<?php echo $parametre; ?>">
+                    <a href="panier.controler.php?<?php echo $parametre; ?>">
                       <img src="../View/models/panier.png" alt="panier" width="22" height="22">
                       <span class="prixPanier"><?=$prixPanier?>€</span>
                     </a>
@@ -155,6 +155,15 @@
           <?php } ?>
           </div>
           <?php } ?>
+        <?php }elseif ($affichepanier) { ?>
+          <?php
+            foreach ($panier as $val) { $value=$database->getArticleRef($val["ref"]);?>
+              <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
+              <?= $value->__get("libelle") ?> <br>
+              Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
+              Prix : <?= $value->__get("prix") ?><br>
+              Ref : <?= $value->__get("ref") ?> <br>
+          <?php }  ?>
         <?php } ?>
       </div>
   </body>
