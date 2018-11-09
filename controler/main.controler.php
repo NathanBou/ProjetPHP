@@ -35,9 +35,9 @@ require_once("../model/DAO.class.php");
         $articles = $database->triArticleNomAZ($IDcategorie);
       } else if ($_POST['tri'] == "nomZ"){
         $articles = $database->triArticleNomZA($IDcategorie);
-      } else if ($_POST['tri'] == "prixC"){
+      } else if ($_POST['tri'] == "prixc"){
         $articles = $database->triArticlePrixC($IDcategorie);
-      } else if ($_POST['tri'] == "prixD") {
+      } else if ($_POST['tri'] == "prixd") {
         $articles = $database->triArticlePrixD($IDcategorie);
       } else {
         $articles = $database->triArticleRef($IDcategorie);
@@ -53,9 +53,9 @@ require_once("../model/DAO.class.php");
         $articles = $database->triArticleNomAZ($cat);
       } else if ($_POST['tri'] == "nomZ"){
         $articles = $database->triArticleNomZA($cat);
-      } else if ($_POST['tri'] == "prixC"){
+      } else if ($_POST['tri'] == "prixc"){
         $articles = $database->triArticlePrixC($cat);
-      } else if ($_POST['tri'] == "prixD") {
+      } else if ($_POST['tri'] == "prixd") {
         $articles = $database->triArticlePrixD($cat);
       } else {
         $articles = $database->triArticleRef($cat);
