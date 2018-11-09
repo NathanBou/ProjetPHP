@@ -28,7 +28,6 @@ require_once("../model/DAO.class.php");
     $prixPanier=0;
   }
   if (isset($_GET['categorie'])) {
-
     $categorie = $database->getCategorie($_GET['categorie']);
     $IDcategorie = $categorie->__get("id");
     if (isset($_POST['tri'])) {
@@ -46,11 +45,7 @@ require_once("../model/DAO.class.php");
     } else {
       $articles = $database->triArticleRef($IDcategorie);
     }
-
-
     $nbelem = count($articles);
-
-
   }elseif (isset($cat)) {
     $categorie = $database->getCategorieId($cat);
     if (isset($_POST['tri'])) {
