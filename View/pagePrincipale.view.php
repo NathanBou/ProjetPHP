@@ -28,7 +28,7 @@
               <div class="col2">
                 <div class="ligne1">
                   <span class="sepHome">|</span>
-                  <a class="lienHome" href=""><span>Accueil</span></a>
+                  <a class="lienHome" href="main.controler.php?<?php echo $parametre; ?>"><span>Accueil</span></a>
                   <span class="sepHome">|</span>
                   <?php if($connect){echo $user;}else{echo "<a class=\"lienConnexion\" href=\"../View/pageConnexion.view.php\">Compte</a>";}?>
                   <span class="sepHome">|</span>
