@@ -6,7 +6,9 @@
   </head>
   <body>
     <div class="img">
-      <img src="../View/models/logo.jpg" alt="LOGO" width="238" height="153">
+      <a href="../controler/main.controler.php">
+        <img src="../View/models/logo.jpg" alt="LOGO" width="238" height="153">
+      </a>
     </div>
     <h1>Authentification</h1>
     <form class="" action="../controler/connexion.controler.php" method="post">
