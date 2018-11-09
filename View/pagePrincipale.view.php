@@ -176,7 +176,9 @@
 
           <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=all"><input type="submit" name="vider" value="Videz le panier"> </a>
             </div>
-        <?php } ?>
+        <?php }else{ ?>
+          <img src="../View/models/acceuil.jpg" alt="photo acceuil">
+        <?php }else{ ?>
       </div>
   </body>
 </html>
