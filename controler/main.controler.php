@@ -29,10 +29,12 @@ require_once("../model/DAO.class.php");
     $IDcategorie = $categorie->__get("id");
     $articles = $database->getArticle($IDcategorie);
     $nbelem = count($articles);
+  }elseif (isset($cat)) {
+    $categorie = $database->getCategorieId($cat);
+    $articles = $database->getArticle($cat);
+    $nbelem = count($articles);
   } else {
     $nbelem = 0;
   }
-
-
   include("../View/pagePrincipale.view.php");
  ?>

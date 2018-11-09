@@ -43,7 +43,13 @@ require_once("utilisateur.class.php");
       //var_dump($result);
       return $result[0];
       }
-
+    function getCategorieId($id):categorie{
+      $commande =  'SELECT * FROM categorie WHERE id="' . $id . '"';
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"categorie");
+      //var_dump($result);
+      return $result[0];
+    }
     function getArticle($categorie): array {
       $commande =  'SELECT * FROM article WHERE categorie="' . $categorie . '"';
       $sth = $this->db->query($commande);
