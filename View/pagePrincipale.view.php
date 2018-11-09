@@ -158,15 +158,14 @@
         <?php }elseif (isset($affichepanier)&&$affichepanier) { ?>
           <div class="listPanier">;
           <h1> Votre panier </h1>
-
           <?php foreach ($panier as $val) { $value=$database->getArticleRef($val["ref"]);?>
             <div class="Art">
-              <fieldset>
-              <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
-              <?= $value->__get("libelle") ?> <br>
+              <fieldset class="Article">
+              <h2> <?= $value->__get("libelle") ?> </h2><br>
+              <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="250" width="250"/> <br>
               Prix : <?= $value->__get("prix") ?><br>
               Ref : <?= $value->__get("ref") ?> <br>
-
+              Quantite : <?= $val["quantite"]?> <br>
             </fieldset>
             </div>
           <?php }  ?>

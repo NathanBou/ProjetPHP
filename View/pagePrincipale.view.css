@@ -236,6 +236,16 @@ nav > ul >li:hover a{
   width:100%;
   margin:auto;
 }
+.Article{
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+}
+.Article > h2{
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
 /*Menu de tri*/
 .tris{
   float: left;
