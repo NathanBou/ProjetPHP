@@ -3,7 +3,6 @@ class utilisateur{
   private $username;
   private $password;
   private $type;
-  private $panier;
 
   //function __construct() {
 
