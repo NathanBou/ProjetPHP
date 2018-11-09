@@ -236,6 +236,10 @@ nav > ul >li:hover a{
   width:100%;
   margin:auto;
 }
+.listPanier > a{
+  text-decoration: none;
+  color: black;
+}
 .Article{
   font-weight: bold;
   text-align: center;

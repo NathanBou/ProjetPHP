@@ -93,5 +93,9 @@ require_once("utilisateur.class.php");
       }
       return $prixtot;
     }
+    function viderPanier($user){
+      $commande = "DELETE FROM panier WHERE user='$user'";
+      $this->db->exec($commande);
+    }
 }
  ?>

@@ -13,6 +13,11 @@ if((isset($_GET["ref"]))&&(isset($_GET["cat"]))){
   $database->ajoutezAuPanier($user,$ref,$cat);
   $panier=$database->getPanier($user);
   include("main.controler.php");
+}elseif((isset($_GET["retirer"]))&&($_GET["retirer"]=="all")) {
+  $database->viderPanier($user);
+    $affichepanier=true;
+  $panier=$database->getPanier($user);
+  include("main.controler.php");
 }else {
   $affichepanier=true;
   $panier=$database->getPanier($user);
