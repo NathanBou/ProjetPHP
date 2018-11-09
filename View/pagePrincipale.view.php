@@ -154,7 +154,7 @@
           <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="300" width="300"/> <br>
           <?= $value->__get("libelle") ?> <br>
           Informations complémentaires : <?= $value->__get("infoscompl") ?> <br>
-          Prix : <?= $value->__get("prix") ?><br>
+          Prix : <?= $value->__get("prix") ?> €<br>
           Ref : <?= $value->__get("ref") ?> <br>
           <?php if($connect){?>
             <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&cat=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23">Ajoutez au panier</a>
@@ -171,7 +171,7 @@
               <fieldset class="Article">
               <h2> <?= $value->__get("libelle") ?> </h2><br>
               <img src="../View/models/<?= $value->__get("image") ?>" alt="<?=$value->__get("libelle")?>" height="250" width="250"/> <br>
-              Prix : <?= $value->__get("prix") ?><br>
+              Prix : <?= $value->__get("prix") ?> €<br>
               Ref : <?= $value->__get("ref") ?> <br>
               Quantite : <?= $val["quantite"]?> <br>
               <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=article&ref=<?= $value->__get("ref")?>"><input type="submit" name="vider" value="Retirer l'article"> </a>
