@@ -10,6 +10,5 @@ $cat=$_GET["cat"];
 $user=$_GET["connect"];
 $database->ajoutezAuPanier($user,$ref,$cat);
 $panier=$database->getPanier($user);
-$_GET['categorie']=$cat;
 include("main.controler.php");
  ?>
