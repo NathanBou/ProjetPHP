@@ -97,5 +97,21 @@ require_once("utilisateur.class.php");
       $commande = "DELETE FROM panier WHERE user='$user'";
       $this->db->exec($commande);
     }
+    function supprArticle($user,$ref){
+      $commande = "DELETE FROM panier WHERE user='$user' AND ref='$ref'";
+      $this->db->exec($commande);
+    }
+    function supprunArticle($user,$ref){
+      $BDQuant= "SELECT quantite FROM panier WHERE user=\"$user\" AND ref=\"$ref\"";
+      $sth = $this->db->query($BDQuant);
+      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+      $quant=intval($result[0]['quantite'])-1;
+      if ($quant==0) {
+        $this->supprArticle($user,$ref);
+      }else{
+      $commande="UPDATE panier SET quantite='$quant' WHERE user='$user' AND ref='$ref'";
+      $this->db->exec($commande);
+      }
+    }
 }
  ?>

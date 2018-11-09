@@ -167,6 +167,10 @@
               Prix : <?= $value->__get("prix") ?><br>
               Ref : <?= $value->__get("ref") ?> <br>
               Quantite : <?= $val["quantite"]?> <br>
+              <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=article&ref=<?= $value->__get("ref")?>"><input type="submit" name="vider" value="Retirer l'article"> </a>
+              <?php if ($val["quantite"]>1){ ?>
+                <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=unarticle&ref=<?= $value->__get("ref")?>"><input type="submit" name="vider" value="Retirer un seul article"> </a>
+              <?php } ?>
             </fieldset>
             </div>
           <?php }  ?>
