@@ -8,6 +8,9 @@ global $erreur;
 $connect=false;
 $database = new DAO();
 $user = $_POST['username'];
+if (isset($_GET["categorie"])) {
+    $cat=$_GET["categorie"];
+}
 $allusers=$database->getUsers();
 $know=false;
 foreach ($allusers as $value) {

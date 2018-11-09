@@ -11,7 +11,7 @@
       </a>
     </div>
     <h1>Authentification</h1>
-    <form class="" action="../controler/connexion.controler.php" method="post">
+    <form class="" action="../controler/connexion.controler.php?<?php if(isset($_GET["categorie"])){echo $_GET["categorie"];} ?>" method="post">
       <?php if (isset($erreur)){echo $erreur;} ?>
       <div class="lab">
         <label for="username">Nom d'utilisateur</label>
