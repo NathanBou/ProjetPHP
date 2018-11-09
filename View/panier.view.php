@@ -5,6 +5,9 @@
     <title></title>
   </head>
   <body>
+    <?php
+      $user=$_GET['connect'];
 
+     ?>
   </body>
 </html>

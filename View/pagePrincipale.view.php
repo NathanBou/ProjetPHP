@@ -29,7 +29,7 @@
                   <?php if($connect){echo $user;}else{echo "<a class=\"lienConnexion\" href=\"../View/pageConnexion.view.php\">Compte</a>";}?>
                   <span class="sepHome">|</span>
                   <div class="Panier">
-                    <a href="../View/panier.view.php">
+                    <a href="../View/panier.view.php?<?php echo $parametre; ?>">
                       <img src="../View/models/panier.png" alt="panier" width="22" height="22">
                       <span class="prixPanier"><?=$prixPanier?>€</span>
                     </a>

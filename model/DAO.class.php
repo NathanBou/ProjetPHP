@@ -73,7 +73,7 @@ require_once("utilisateur.class.php");
       foreach ($panier as $value) {
         $ref=$value['ref'];
         $article=$this->getArticleRef($ref);
-        $prixarticle=$article->getPrix();
+        $prixarticle=($article->getPrix())*$value['quantite'];
         $prixtot=$prixtot+$prixarticle;
       }
       return $prixtot;
