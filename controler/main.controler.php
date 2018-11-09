@@ -9,20 +9,25 @@ require_once("../model/DAO.class.php");
 //Deuxième Partie
   global $database;
   global $prixPanier;
+  global $admin;
   $database = new DAO();
-  if((!isset($_GET['connect']))&&(!isset($connect))){
+  if((!isset($_GET['connect']))&&(!isset($connect))){ //première connexion
       global $connect;
       global $user;
       $prixPanier=0;
-  }elseif((isset($_GET['connect']))&&($_GET['connect']!='')){
+  }elseif((isset($_GET['connect']))&&($_GET['connect']!='')){ //l'utilisateur est connecté via get
       global $user;
       $user=$_GET['connect'];
       global $connect;
       $connect=true;
+      $utilisateur = $database->getUtilisateur($user);
+      $admin = $utilisateur->getType();
       $prixPanier=$database->getPrixPanier($user);
-  }elseif((isset($connect))&&($connect)){
+  }elseif((isset($connect))&&($connect)){ //l'utilisateur est connecté
     $prixPanier=$database->getPrixPanier($user);
-  }elseif((isset($_GET['connect']))&&($_GET['connect']=='')){
+    $utilisateur = $database->getUtilisateur($user);
+    $admin = $utilisateur->getType();
+  }elseif((isset($_GET['connect']))&&($_GET['connect']=='')){ //déconnexion
     global $connect;
     $connect=false;
     $prixPanier=0;

@@ -11,8 +11,8 @@ class utilisateur{
   function getType(){
     return $this->type;
   }
-  function getPassword(){
-    return $this->password;
+  function getUsername(){
+    return $this->username;
   }
 
 }

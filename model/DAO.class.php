@@ -149,7 +149,12 @@ require_once("utilisateur.class.php");
       return $result;
     }
 
-    function ModifierPrix($prix) {
+    function ModifierPrix($ref, $prix) {
+      $commande =  "UPDATE article SET prix = $prix WHERE ref=$ref";
+      $this->db->exec($commande);
+    }
+
+    function ajouterUtilisateur() {
 
     }
 
