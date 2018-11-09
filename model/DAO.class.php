@@ -61,13 +61,12 @@ require_once("utilisateur.class.php");
       $test= "SELECT quantite FROM panier WHERE user=\"$user\" AND ref=\"$ref\"";
       $sth = $this->db->query($test);
       $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-      var_dump($result[0]);
-      if ($result[0]!='0') {
+      if (!empty($result)) {
         $quant=intval($result[0]['quantite'])+1;
         $commande="UPDATE panier SET quantite='$quant' WHERE user='$user' AND ref='$ref'";
         $this->db->exec($commande);
       }else{
-        $commande = "INSERT INTO panier(user,ref,categorie,quantite) VALUES('$user','$ref','$cat','$quant')";
+        $commande = "INSERT INTO panier(user,ref,categorie,quantite) VALUES('$user','$ref','$cat',1)";
         $this->db->exec($commande);
       }
     }
@@ -75,7 +74,6 @@ require_once("utilisateur.class.php");
       $commande =  'SELECT * FROM panier WHERE user="'.$user.'" ';
       $sth = $this->db->query($commande);
       $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-      var_dump($result);
       return $result;
     }
     function getPrixPanier($user):int{
