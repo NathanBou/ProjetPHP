@@ -17,18 +17,18 @@ require_once("../model/DAO.class.php");
       global $connect;
       $connect=true;
       $prixPanier=$database->getPrixPanier($user);
+  }elseif((isset($connect))&&($connect)){
+    $prixPanier=$database->getPrixPanier($user);
   }elseif((isset($_GET['connect']))&&($_GET['connect']=='')){
     global $connect;
     $connect=false;
     $prixPanier=0;
   }
-
   if (isset($_GET['categorie'])) {
     $categorie = $database->getCategorie($_GET['categorie']);
     $IDcategorie = $categorie->__get("id");
     $articles = $database->getArticle($IDcategorie);
     $nbelem = count($articles);
-
   } else {
     $nbelem = 0;
   }
