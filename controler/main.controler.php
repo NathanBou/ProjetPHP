@@ -10,6 +10,7 @@ require_once("../model/DAO.class.php");
   global $database;
   global $prixPanier;
   global $admin;
+  $admin =1;
   $database = new DAO();
   if((!isset($_GET['connect']))&&(!isset($connect))){ //première connexion
       global $connect;
