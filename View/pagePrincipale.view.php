@@ -156,9 +156,8 @@
           </div>
           <?php } ?>
         <?php }elseif (isset($affichepanier)&&$affichepanier) { ?>
-          <div class="listPanier">;
+          <div class="listPanier">
           <h1> Votre panier </h1>
-          <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=all"><input type="submit" name="vider" value="Videz le panier"> </a>
           <?php foreach ($panier as $val) { $value=$database->getArticleRef($val["ref"]);?>
             <div class="Art">
               <fieldset class="Article">
@@ -174,6 +173,8 @@
             </fieldset>
             </div>
           <?php }  ?>
+
+          <a href="panier.controler.php?<?php echo $parametre; ?>&retirer=all"><input type="submit" name="vider" value="Videz le panier"> </a>
             </div>
         <?php } ?>
       </div>

@@ -249,6 +249,10 @@ nav > ul >li:hover a{
   font-size: 20px;
   font-style: italic;
   text-decoration: underline;
+  margin-bottom: 0px;
+}
+.Article >a{
+  text-decoration: none;
 }
 /*Menu de tri*/
 .tris{
