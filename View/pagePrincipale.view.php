@@ -163,7 +163,7 @@
               <a href="../View/pageConnexion.view.php?<?php if(isset($paracat)){echo $paracat;} ?>"><input type="submit" name="" value="Connectez vous !"></a>
             <?php } ?>
             <?php if ($admin==0) { ?>
-              <form class="" action="main.controler.php?<?php echo $parametre; ?>&ref=<?php $value->__get("ref")?>&<?php if(isset($paracat)){echo $paracat;} ?>" method="get">
+              <form class="" action="main.controler.php?<?php echo $parametre; ?>&ref=<?php echo $value->__get("ref");?>&<?php if(isset($paracat)){echo $paracat;} ?>" method="post">
                 <input type="number" name="prix" step=0.01 min=0.00 value=0.00>
                 <input type="submit" name="changerPrix" value="Changer le prix">
               </form>

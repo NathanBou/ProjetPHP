@@ -33,6 +33,10 @@ require_once("../model/DAO.class.php");
     $connect=false;
     $prixPanier=0;
   }
+  if (isset($_POST['prix'])) {
+    $prix=intval($_POST['prix']);
+    $database->ModifierPrix($_GET['ref'] ,$prix);
+  }
   if (isset($_GET['categorie'])) {
     $categorie = $database->getCategorie($_GET['categorie']);
     $IDcategorie = $categorie->__get("id");
@@ -76,9 +80,6 @@ require_once("../model/DAO.class.php");
     $nbelem = 0;
   }
 
-  if (isset($_GET['prix'])) {
-    $database->ModifierPrix($_GET['ref'] ,$_GET['prix']);
-  }
 
 //Troisième Partie
   include("../View/pagePrincipale.view.php");
