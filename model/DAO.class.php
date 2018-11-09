@@ -149,5 +149,9 @@ require_once("utilisateur.class.php");
       return $result;
     }
 
+    function ModifierPrix($prix) {
+
+    }
+
 }
  ?>
