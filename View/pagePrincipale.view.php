@@ -14,6 +14,12 @@
           }else{
             $parametre="connect=";
           }
+          if(isset($categorie)){
+            global $paracat;
+            echo$categorie->__get("nom");
+            $paracat="&categorie=".$categorie->__get("nom");
+            echo "$paracat";
+          }
           ?>
         <div class="MainMenu">
           <div class="MenuTot">
@@ -36,7 +42,7 @@
                   </div>
                   <span class="sepHome">|</span>
                   <?php if($connect){ ?>
-                    <a href="main.controler.php?connect="> <img src="../View/models/logout.png" alt="logout" width="23" height="23"> </a>
+                    <a href="main.controler.php?connect=<?php if(isset($paracat)){echo $paracat;} ?>"> <img src="../View/models/logout.png" alt="logout" width="23" height="23"> </a>
                     <span class="sepHome">|</span>
                   <?php } ?>
                 </div>
