@@ -154,9 +154,6 @@ require_once("utilisateur.class.php");
       $this->db->exec($commande);
     }
 
-    function ajouterUtilisateur() {
-
-    }
 
 }
  ?>
