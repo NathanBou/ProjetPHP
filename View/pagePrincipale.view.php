@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -161,6 +161,13 @@
               <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&cat=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23"><input type="submit" name="" value="Ajoutez au panier"> </a>
             <?php }else{?>
               <a href="../View/pageConnexion.view.php"><input type="submit" name="" value="Connectez vous !"></a>
+            <?php } ?>
+            <?php if ($admin==1) { ?>
+              <form class="" action="../View/pagePrincipale.view.php?ref=<?php=$value->__get("ref")?>" method="post">
+                <input type="number" name="prix" step=0.01 min=0.00 value=0.00>
+                <input type="submit" name="changerPrix" value="Changer le prix">
+              </form>
+
             <?php } ?>
         </fieldset>
           </div>

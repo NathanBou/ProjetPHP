@@ -75,6 +75,10 @@ require_once("../model/DAO.class.php");
     $nbelem = 0;
   }
 
+  if (isset($_POST['prix']) {
+    $database->ModifierPrix($_GET['ref'] ,$_POST['prix']);
+  }
+
 //Troisième Partie
   include("../View/pagePrincipale.view.php");
  ?>
