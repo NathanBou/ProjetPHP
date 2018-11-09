@@ -113,5 +113,41 @@ require_once("utilisateur.class.php");
       $this->db->exec($commande);
       }
     }
+
+    function triArticleNomAZ($categorie) {
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by libelle";
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      return $result;
+    }
+
+    function triArticleNomZA($categorie) {
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by desc libelle";
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      return $result;
+    }
+
+    function triArticlePrixC($categorie) {
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by prix";
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      return $result;
+    }
+
+    function triArticlePrixD($categorie) {
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by desc prix";
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      return $result;
+    }
+
+    function triArticleRef($categorie) {
+      $commande =  "SELECT * FROM article WHERE categorie='$categorie' order by ref";
+      $sth = $this->db->query($commande);
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"article");
+      return $result;
+    }
+
 }
  ?>
