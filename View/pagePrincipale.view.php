@@ -162,7 +162,7 @@
             <?php }else{?>
               <a href="../View/pageConnexion.view.php?<?php if(isset($paracat)){echo $paracat;} ?>"><input type="submit" name="" value="Connectez vous !"></a>
             <?php } ?>
-            <?php if ($admin==1) { ?>
+            <?php if ($admin==0) { ?>
               <form class="" action="../View/pagePrincipale.view.php?ref=<?php=$value->__get("ref")?>" method="post">
                 <input type="number" name="prix" step=0.01 min=0.00 value=0.00>
                 <input type="submit" name="changerPrix" value="Changer le prix">
