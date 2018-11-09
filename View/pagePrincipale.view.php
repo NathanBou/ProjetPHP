@@ -116,18 +116,26 @@
       <?php if  ($nbelem != 0) {?>
       <div class="tris">
         <h1>Trier par :</h1>
-        <FORM class="" action="../controler/pagePrincipale.php" method="post">
+        <FORM class="" action="../controler/main.controler.php" method="post">
           <div class="">
             <label for="ref">Référence</label>
           <INPUT id="ref" type="radio" name="tri" value="référence" checked>
           </div>
           <div class="">
-            <label for="nom">Nom</label>
-          <INPUT id = "nom" type="radio" name="tri" value="nom">
+            <label for="nomA">Nom A-Z</label>
+          <INPUT id = "nomA" type="radio" name="tri" value="nomA">
           </div>
           <div class="">
-            <label for="prix">Prix</label>
-          <INPUT id = "prix" type="radio" name="tri" value="prix">
+            <label for="nomZ">Nom Z-A</label>
+          <INPUT id = "nomZ" type="radio" name="tri" value="nomZ">
+          </div>
+          <div class="">
+            <label for="prixc">Prix croissant</label>
+          <INPUT id = "prixc" type="radio" name="tri" value="prixc">
+          </div>
+          <div class="">
+            <label for="prixd">Prix décroissant</label>
+          <INPUT id = "prixd" type="radio" name="tri" value="prixd">
           </div>
           <div class="bouton">
             <input type="submit" name="Valider" value="Valider">
