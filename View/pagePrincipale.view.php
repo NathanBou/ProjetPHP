@@ -16,9 +16,7 @@
           }
           if(isset($categorie)){
             global $paracat;
-            echo$categorie->__get("nom");
             $paracat="&categorie=".$categorie->__get("nom");
-            echo "$paracat";
           }
           ?>
         <div class="MainMenu">
