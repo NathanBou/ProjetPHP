@@ -16,7 +16,7 @@
           }
           if(isset($categorie)){
             global $paracat;
-            $paracat="&categorie=".$categorie->__get("nom");
+            $paracat="categorie=".$categorie->__get("nom");
           }
           ?>
         <div class="MainMenu">
@@ -30,7 +30,7 @@
                   <span class="sepHome">|</span>
                   <a class="lienHome" href="main.controler.php?<?php echo $parametre; ?>"><span>Accueil</span></a>
                   <span class="sepHome">|</span>
-                  <?php if($connect){echo $user;}else{echo "<a class=\"lienConnexion\" href=\"../View/pageConnexion.view.php\">Compte</a>";}?>
+                  <?php if($connect){echo $user;}else{?> <a class="lienConnexion" href="../View/pageConnexion.view.php?<?php if(isset($paracat)){echo $paracat;} ?>">Compte</a><?php } ?>
                   <span class="sepHome">|</span>
                   <div class="Panier">
                     <a href="panier.controler.php?<?php echo $parametre; ?>">
@@ -40,7 +40,7 @@
                   </div>
                   <span class="sepHome">|</span>
                   <?php if($connect){ ?>
-                    <a href="main.controler.php?connect=<?php if(isset($paracat)){echo $paracat;} ?>"> <img src="../View/models/logout.png" alt="logout" width="23" height="23"> </a>
+                    <a href="main.controler.php?connect=&<?php if(isset($paracat)){echo $paracat;} ?>"> <img src="../View/models/logout.png" alt="logout" width="23" height="23"> </a>
                     <span class="sepHome">|</span>
                   <?php } ?>
                 </div>
@@ -116,7 +116,7 @@
       <?php if  ($nbelem != 0) {?>
       <div class="tris">
         <h1>Trier par :</h1>
-        <FORM class="" action="../controler/main.controler.php?<?php echo $parametre; ?><?php if(isset($paracat)){echo $paracat;} ?>" method="post">
+        <FORM class="" action="../controler/main.controler.php?<?php echo $parametre; ?>&<?php if(isset($paracat)){echo $paracat;} ?>" method="post">
           <div class="">
             <label for="ref">Référence</label>
           <INPUT id="ref" type="radio" name="tri" value="référence">
@@ -160,7 +160,7 @@
             <?php if($connect){?>
               <a href="panier.controler.php?<?php echo $parametre; ?>&ref=<?= $value->__get("ref")?>&cat=<?= $value->__get("categorie") ?>"> <img src="../View/models/panier.png" alt="AjoutezAuPanier" width="23" height="23"><input type="submit" name="" value="Ajoutez au panier"> </a>
             <?php }else{?>
-              <a href="../View/pageConnexion.view.php"><input type="submit" name="" value="Connectez vous !"></a>
+              <a href="../View/pageConnexion.view.php?<?php if(isset($paracat)){echo $paracat;} ?>"><input type="submit" name="" value="Connectez vous !"></a>
             <?php } ?>
             <?php if ($admin==1) { ?>
               <form class="" action="../View/pagePrincipale.view.php?ref=<?php=$value->__get("ref")?>" method="post">
